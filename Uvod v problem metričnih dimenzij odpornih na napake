@@ -1,0 +1,46 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amsfonts}
+\usepackage{enumitem}
+\usepackage{footmisc}
+\pagestyle{empty}
+
+\begin{document}
+
+\section{Metrična dimenzija}
+Množica $S \in V$ je v grafu $G$ razrešljiva, če za vsak par $x, y \in V(G)$ 
+ostaja $s \in S,$ da velja $d(x, s) \neq d(y, s).$ Rečemo, da sta $x$ in $y$
+razrešeni z vozliščem $s$. Množica $S$ je odporna na napake, če je 
+$S \setminus \{v\}$ prav tako razrešljiva za vsak $v \in S.$ 
+
+
+Metrična dimenzija neusmerjenega in povezanega grafa $G = (V, E)$ je najmanjša 
+podmnožica nabora vozlišč $S$ iz $V$ z lastnostjo, da so vsa vozlišča v $V$ 
+enolično določena z njihovimi razdaljami do vozlišč podmnožice $S$.
+
+Primer uporabe metrične dimenzije je problem robotske navigacije. Pri tem pusitmo
+robota, da navigira v nekem prostoru, ki je določen z grafom $G$. Pri tem so 
+povezave grafa $G$ poti. Robot pošlje signal do posameznega niza vozlišč imenovanih 
+orientacijske točke, da ugotovi kako daleč od njih se nahaja. Pri tem je določanje 
+najmanjše množice orientacijskih točk in njihov položaj, da robot lahko enolično 
+določi, kje se nahaja, simetričen problemu metrične dolžine. Problem nastane, 
+če ena od teh točk ne deluje pravilno, kar pomeni da robot nima dovolj informacij 
+za enolično določanje svoje lokacije. Pri teh težavah nam prav pridejo metrične 
+dolžine, odporne na napake. 
+Nabor za razreševanje, odporen na napake zagotavlja, da tudi če ena od imenovanih 
+točk ne deluje pravilnno bomo dobili prave informacije.
+
+Metrična dimenzija $G$, odporna na napake, je velikost najmanjše razčlenujoče 
+množice $S,$ odporne na napake (v primeru robotske navigacije je to nabor za 
+razreševanje) in jo označimo z $ftdim(G).$
+
+
+\section{Matematična formulacija}
+Imamo povezan in neusmerjen graf $G = (V, E),$ kjer je $V = \{1, 2, \ldots, n\}$
+množica vozlišč in $\mid E \mid = m.$ Naj bo $d(u, v)$ najkrajša pot med vozliščema
+$u, v \in V.$
+
+\end{document}
