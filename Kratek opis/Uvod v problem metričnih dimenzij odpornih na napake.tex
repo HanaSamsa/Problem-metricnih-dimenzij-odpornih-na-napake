@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt, fleqn]{article}
 \usepackage[slovene]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -42,5 +42,65 @@ razreševanje) in jo označimo z $ftdim(G).$
 Imamo povezan in neusmerjen graf $G = (V, E),$ kjer je $V = \{1, 2, \ldots, n\}$
 množica vozlišč in $\mid E \mid = m.$ Naj bo $d(u, v)$ najkrajša pot med vozliščema
 $u, v \in V.$
+
+\subsection{Celoštevilski linearni program}
+% za naš program je pripadajoči celoštevilski linearni progam
+% neki moramo napisati v tem smislu samo ne najdemprave povedi
+V naslednjem celoštevilskem lineearnem programu naj velja $1 \leq u < v \leq n$ in 
+$1 \leq i < j \leq n.$ Najprej definirajmo matriko koeficientov A. Spremenljivka $x_i,$ 
+definirana s predpisom \eqref{eq:2} nam pove ali vozlišče $i$ pripada množici $S.$ 
+Podobno spremenljivka $y_{i, j}$ definirana s \eqref{eq:3} pove ali oba vozlišča $i$ 
+in $j$ ležita v $S.$ 
+
+\begin{equation}
+    A_{(u, v), (i, j)} = \begin{cases}
+        1, d(u, i) \neq d(v, i) \text{ in } d(u, j) \neq d(v, j) \\
+        0, d(u, i) = d(v, i) \text{ ali } d(u, j) = d(v, j)
+    \end{cases}
+\label{eq:1}
+\end{equation}
+
+\begin{equation}
+    x_i = \begin{cases}
+        1, i \in S \\
+        0, i \notin S
+    \end{cases}
+\label{eq:2}
+\end{equation} % to ne pride na sredino strani kot je ponavadi
+
+\begin{equation}
+    y_ij = \begin{cases}
+        1, i, j \in S \\
+        0, \text{sicer}
+    \end{cases}
+\label{eq:3}
+\end{equation}
+
+\begin{equation}
+    \min \sum_{i = 1}^{n} x_i  
+\label{eq:4}
+\end{equation}
+
+\begin{equation}
+    \sum_{i = 1}^{n - 1} \sum_{j = i + 1}^{n} A_{(u, v), (i, j)} * y_ij \geq 1,
+    \text{ } 1 \leq u < v \leq n
+\label{eq:5}
+\end{equation}
+
+\begin{equation}
+    y_ij \leq \frac{1}{2} (x_i + x_j), \text{ } 1 \leq i < j \leq n
+\label{eq:6}
+\end{equation}
+
+\begin{equation}
+    y_ij \geq x_i + x_j - 1, \text{ } 1 \leq i < j \leq n
+\label{eq:7}
+\end{equation}
+
+\begin{equation}
+    y_ij \in \{0, 1\}, \text{ } 1 \leq i < j \leq n \\
+    x_i \in \{0, 1\}, \text{ } 1 \leq i \leq n
+\label{qe:8}
+\end{equation}
 
 \end{document}
