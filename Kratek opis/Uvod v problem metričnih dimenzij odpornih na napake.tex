@@ -53,9 +53,9 @@ Podobno spremenljivka $y_{i, j}$ definirana s \eqref{eq:3} pove ali oba vozliš�
 in $j$ ležita v $S.$ 
 
 \begin{equation}
-    A_{(u, v), (i, j)} = \begin{cases}
-        1, d(u, i) \neq d(v, i) \text{ in } d(u, j) \neq d(v, j) \\
-        0, d(u, i) = d(v, i) \text{ ali } d(u, j) = d(v, j)
+    A_{(u, v), i} = \begin{cases}
+        1, d(u, i) \neq d(v, i) \\
+        0, d(u, i) = d(v, i)
     \end{cases}
 \label{eq:1}
 \end{equation}
@@ -69,38 +69,22 @@ in $j$ ležita v $S.$
 \end{equation} % to ne pride na sredino strani kot je ponavadi
 
 \begin{equation}
-    y_ij = \begin{cases}
-        1, i, j \in S \\
-        0, \text{sicer}
-    \end{cases}
+    \min \sum_{i = 1}^{n} x_i  
 \label{eq:3}
 \end{equation}
 
 \begin{equation}
-    \min \sum_{i = 1}^{n} x_i  
+    \sum_{i = 1}^{n} A_{(u, v), i} \cdot x_i \geq 2, \text{ } 1 \leq u < v \leq n 
 \label{eq:4}
 \end{equation}
 
 \begin{equation}
-    \sum_{i = 1}^{n - 1} \sum_{j = i + 1}^{n} A_{(u, v), (i, j)} * y_ij \geq 1,
-    \text{ } 1 \leq u < v \leq n
+    x_i \in \{0, 1\}, \text{ } 1 \leq i \leq n
 \label{eq:5}
 \end{equation}
 
-\begin{equation}
-    y_ij \leq \frac{1}{2} (x_i + x_j), \text{ } 1 \leq i < j \leq n
-\label{eq:6}
-\end{equation}
-
-\begin{equation}
-    y_ij \geq x_i + x_j - 1, \text{ } 1 \leq i < j \leq n
-\label{eq:7}
-\end{equation}
-
-\begin{equation}
-    y_ij \in \{0, 1\}, \text{ } 1 \leq i < j \leq n \\
-    x_i \in \{0, 1\}, \text{ } 1 \leq i \leq n
-\label{qe:8}
-\end{equation}
+Enačba \eqref{eq:3} predstavlja najmanjšo podmnožico $S.$ Enačba \eqref{eq:4} pa nam da pogoj, da
+je poodmnožica $S$ razrešljiva množica, odporna na napake. To pomeni, da če za vozlišči $i$ velja 
+$d(u, i) \neq d(v, i)$ in je hkrati $i \in S$ bo potem vsota enaka 2, kar pa je ravno to kar iščemo.
 
 \end{document}
