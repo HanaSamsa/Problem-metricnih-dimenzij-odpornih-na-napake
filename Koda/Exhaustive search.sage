@@ -77,16 +77,17 @@ def metricna_dimenzija(G):
 
 # DEFINIRAMO FUNKCIJO, KI POIŠČE USTREZNE GRAFE:
 
-def poisci_grafe(ciljna_dim, ciljne_ftdim, max_vozlisc):
+def poisci_grafe(ciljna_dim, ciljna_ftdim, min_vozlisc, max_vozlisc):
 
     grafi = []
 
-    for st_vozlisc in range(2, max_vozlisc + 1):
+    for st_vozlisc in range(min_vozlisc, max_vozlisc + 1):
         for G in graphs.nauty_geng(f'{st_vozlisc} -c'): # samo povezani grafi
             dim = metricna_dimenzija(G)
             ftdim = na_napake_odporna_metricna_dimenzija(G)
 
-            if dim == ciljna_dim and ftdim in ciljne_ftdim:
-                grafi.append((G, st_vozlisc, dim, ftdim))
+            if dim == ciljna_dim and ftdim == ciljna_ftdim:
+                sosedi = {v: list(G[v]) for v in G} # sosede potrebujemo za risanje grafov
+                grafi.append((G, st_vozlisc, dim, ftdim, sosedi))
 
     return grafi
