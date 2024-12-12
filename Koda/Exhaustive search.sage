@@ -1,3 +1,6 @@
+from sage.all import *
+import matplotlib.pyplot as plt
+
 G = graphs.CompleteGraph(5)
 
 # DEFINIRAMO FUNKCIJO, KI IZRAČUNA ftdim(G)
@@ -77,9 +80,9 @@ def metricna_dimenzija(G):
 
 # DEFINIRAMO FUNKCIJO, KI POIŠČE USTREZNE GRAFE:
 
-def poisci_grafe(ciljna_dim, ciljna_ftdim, min_vozlisc, max_vozlisc):
+def poisci_grafe(ciljna_dim, ciljna_ftdim, min_vozlisc, max_vozlisc): # najmanjše možno število vozlišč za ftdim = 5 je 7, pod tem sploh ne preverjamo
 
-    grafi = []
+    grafi = [] # dodajali bomo ustrezne grafe
 
     for st_vozlisc in range(min_vozlisc, max_vozlisc + 1):
         for G in graphs.nauty_geng(f'{st_vozlisc} -c'): # samo povezani grafi
@@ -89,5 +92,8 @@ def poisci_grafe(ciljna_dim, ciljna_ftdim, min_vozlisc, max_vozlisc):
             if dim == ciljna_dim and ftdim == ciljna_ftdim:
                 sosedi = {v: list(G[v]) for v in G} # sosede potrebujemo za risanje grafov
                 grafi.append((G, st_vozlisc, dim, ftdim, sosedi))
+                plt.figure(figsize = (6, 6))
+                plot(G).show()  # izrišem grafe
+                plt.close()
 
-    return grafi
+    #return grafi ne vem, a bi to sploh imeli notri, a nebi rajši samo izrisevali - je bolj nazorno.
