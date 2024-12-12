@@ -1,72 +1,104 @@
-# potrebuje malo preimenovanja
+from sage.all import *
 import random
-def oceni_graf(G, ciljna_dim, ciljni_ftdim):
-    """
-    Oceni, kako blizu je graf G želenim dimenzijam.
-    - Kazen za odstopanje od ciljnih dimenzij.
-    - Manjša ocena pomeni boljši graf.
-    """
-    dim = metricna_dimenzija(G)
-    ftdim = na_napake_odporna_metricna_dimenzija(G)
+import matplotlib.pyplot as plt
 
-    # Če graf ustreza ciljni dimenziji in ftdim, vrnemo zelo nizko oceno
-    if dim == ciljna_dim and ftdim == ciljni_ftdim:
-        return 0
+# funkcija Tweak za prilagajanje grafa: naključno prilagodimo graf z dodajanjem/odstranjevanjem vozlišča
 
-    # Kazen za odstopanje od ciljev
-    kazen_dim = abs(dim - ciljna_dim)
-    kazen_ftdim = max(0, ciljni_ftdim - ftdim)  # Kazen samo, če je ftdim prenizka
-    return kazen_dim * 10 + kazen_ftdim * 100
+def tweak_graph(G): 
+    
+    robovi = list(G.edges(labels = False))
+    if random.random() < 0.5 and robovi:
+        # odstranimo naključno vozlišče
+        G.delete_edge(random.choice(robovi))
+    else:
+        # dodamo naključno vozlišče
+        u, v = random.sample(range(G.num_verts()), 2)
+        if not G.has_edge(u, v):
+            G.add_edge(u, v)
 
-def tweak_graph(G):
-    """
-    Naključno prilagodi strukturo grafa G:
-    - Doda ali odstrani naključni rob.
-    """
-    H = G.copy()
-    vertices = G.vertices()
-    if random.random() < 0.5:  # Dodajanje roba
-        u, v = random.sample(vertices, 2)
-        if not H.has_edge(u, v):
-            H.add_edge(u, v)
-    else:  # Odstranjevanje roba
-        if len(H.edges()) > 0:
-            H.delete_edge(random.choice(H.edges(labels=False)))
-    return H
 
-def simulirano_ohlajanje_grafov(ciljna_dim, ciljni_ftdim, st_vozlisc, max_iter=1000, zacetna_temp=100, alpha=0.95):
-    """
-    Simulirano ohlajanje za iskanje grafov z danimi lastnostmi.
-    """
-    # Začetni graf: naključni povezani graf
-    G = graphs.RandomGNP(st_vozlisc, 0.5)
-    najboljsi_graf = G
-    najboljsa_ocena = oceni_graf(G, ciljna_dim, ciljni_ftdim)
+# Hill-Climbing metahevristika
 
-    trenutni_graf = G
-    trenutna_ocena = najboljsa_ocena
-    temperatura = zacetna_temp
+def hill_climbing(ciljna_dim, ciljna_ftdim, st_vozlisc, max_iteracij=1000):
+ 
+    # generiramo prvotni graf
+    trenutni_graf = graphs.CompleteGraph(st_vozlisc)
+    trenutna_dim = metricna_dimenzija(trenutni_graf)
+    trenutna_ftdim = na_napake_odporna_metricna_dimenzija(trenutni_graf)
 
-    for _ in range(max_iter):
-        # Naključno prilagodimo trenutni graf
-        nov_graf = tweak_graph(trenutni_graf)
-        nova_ocena = oceni_graf(nov_graf, ciljna_dim, ciljni_ftdim)
+    if trenutna_dim == ciljna_dim and trenutna_ftdim == ciljna_ftdim:
+        return trenutni_graf.show(), trenutna_dim, trenutna_ftdim
 
-        # Sprejmi novo rešitev z določeno verjetnostjo
-        if nova_ocena < trenutna_ocena or random.random() < math.exp((trenutna_ocena - nova_ocena) / temperatura):
+    for iteracija in range(max_iteracij):
+        # naredimo kopijo in prilagodimo graf
+        nov_graf = trenutni_graf.copy()
+        tweak_graph(nov_graf)
+
+        # ocenimo nov graf
+        nova_dim = metricna_dimenzija(nov_graf)
+        nova_ftdim = na_napake_odporna_metricna_dimenzija(nov_graf)
+
+        # če je boljši, ga sprejmemo
+        if nova_dim == ciljna_dim and nova_ftdim == ciljna_ftdim:
+            return nov_graf, nova_dim, nova_ftdim
+        elif abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) < abs(trenutna_dim - ciljna_dim) + abs(trenutna_ftdim - ciljna_ftdim):
             trenutni_graf = nov_graf
-            trenutna_ocena = nova_ocena
+            trenutna_dim = nova_dim
+            trenutna_ftdim = nova_ftdim
 
-            # Posodobi najboljšo rešitev
-            if nova_ocena < najboljsa_ocena:
-                najboljsi_graf = nov_graf
-                najboljsa_ocena = nova_ocena
+    return trenutni_graf.show(), trenutna_dim, trenutna_ftdim
 
-        # Znižanje temperature
-        temperatura = temperatura * alpha
 
-        # Če smo našli ustrezen graf, prekinemo
-        if najboljsa_ocena == 0:
+# Simulated Annealing metahevristika
+
+def simulated_annealing(ciljna_dim, ciljna_ftdim, st_vozlisc, max_iteracij = 1000, zacetna_temp = 100, alpha =0.95):
+
+    # generiramo začetni graf
+    trenutni_graf = graphs.CompleteGraph(st_vozlisc)
+    trenutna_dim = metricna_dimenzija(trenutni_graf)
+    trenutna_ftdim = na_napake_odporna_metricna_dimenzija(trenutni_graf)
+    naj_graf = trenutni_graf
+    naj_dim = trenutna_dim
+    naj_ftdim = trenutna_ftdim
+
+    temp = zacetna_temp
+
+    for iteracija in range(max_iteracij):
+        if temp <= 0:
             break
 
-    return najboljsi_graf, najboljsa_ocena
+        # naredimo kopijo in prilagodimo graf
+        nov_graf = trenutni_graf.copy()
+        tweak_graph(nov_graf)
+
+        # ocenimo nov graf
+        nova_dim = metricna_dimenzija(nov_graf)
+        nova_ftdim = na_napake_odporna_metricna_dimenzija(nov_graf)
+
+        # kriterij, po katerem graf sprejmemo
+        spr = abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) - abs(trenutna_dim - ciljna_dim) - abs(trenutna_ftdim - ciljna_ftdim)
+        if spr < 0 or random.random() < exp(-spr / temp):
+            trenutni_graf = nov_graf
+            trenutna_dim = nova_dim
+            trenutna_ftdim = nova_ftdim
+
+            # posodobimo najboljšo rešitev
+            if abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) < abs(naj_dim - ciljna_dim) + abs(naj_ftdim - ciljna_ftdim):
+                naj_graf = nov_graf
+                naj_dim = nova_dim
+                naj_ftdim = nova_ftdim
+
+        # hlajenje
+        temp *= alpha
+
+    return naj_graf.show(), naj_dim, naj_ftdim
+
+
+dim = 2
+ftdim = 9
+st_vozlisc = 15
+
+# poženemo hill climbing
+hc_graf, hc_dim, hc_ftdim = hill_climbing(dim, ftdim, st_vozlisc)
+print("Rezultati Hill-Climbing-a:", hc_graf, hc_dim, hc_ftdim)
+
