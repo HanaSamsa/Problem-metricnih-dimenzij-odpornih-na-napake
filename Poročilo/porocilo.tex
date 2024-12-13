@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage[myheadings]{fullpage}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+
+\usepackage{lmodern}
+\usepackage{amsmath,amsfonts}
+\usepackage{enumitem}
+\usepackage{footmisc}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+
+\begin{document}
+
+\title{ \normalsize \textsc{Projektna naloga}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Problem na napake odporne metrične dimenzije}}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize \date{december 2024} \vspace*{5\baselineskip}}
+\author{
+		Anamarija Potokar, Hana Samsa 
+        \vspace{1 cm} \\
+		Mentorja: doc. dr. Janoš Vidali, \\
+        prof. dr. Riste Škrekovski 
+        \vspace{1 cm} \\
+		Fakulteta za matematiko in fiziko }
+
+\maketitle
+
+\newpage
+
+\section{Na napake odporna metrična dimenzija}
+Množica $S \in V$ je v grafu $G$ razrešljiva, če za vsak par $x, y \in V(G)$ 
+ostaja $s \in S,$ da velja $d(x, s) \neq d(y, s).$ Rečemo, da sta $x$ in $y$
+razrešeni z vozliščem $s$. Množica $S$ je odporna na napake, če je 
+$S \setminus \{v\}$ prav tako razrešljiva za vsak $v \in S.$ 
+
+Metrična dimenzija neusmerjenega in povezanega grafa $G = (V, E)$ je najmanjša 
+podmnožica nabora vozlišč $S \subset V$ z lastnostjo, da so vsa vozlišča v $V$ 
+enolično določena z njihovimi razdaljami do vozlišč podmnožice $S$.
+
+Primer uporabe metrične dimenzije je problem robotske navigacije. Pri tem pusitmo
+robota, da navigira v nekem prostoru, ki je določen z grafom $G$. Pri tem so 
+povezave grafa $G$ poti. Robot pošlje signal do posameznega niza vozlišč imenovanih 
+orientacijske točke, da ugotovi kako daleč od njih se nahaja. Pri tem je določanje 
+najmanjše množice orientacijskih točk in njihov položaj, da robot lahko enolično 
+določi, kje se nahaja, simetričen problemu metrične dolžine. Problem nastane, 
+če ena od teh točk ne deluje pravilno, kar pomeni da robot nima dovolj informacij 
+za enolično določanje svoje lokacije. Pri teh težavah nam prav pridejo metrične 
+dolžine, odporne na napake. 
+Nabor za razreševanje, odporen na napake zagotavlja, da tudi če ena od imenovanih 
+točk ne deluje pravilnno bomo dobili prave informacije.
+
+Metrična dimenzija $G$, odporna na napake, je velikost najmanjše razčlenujoče 
+množice $S,$ odporne na napake (v primeru robotske navigacije je to nabor za 
+razreševanje) in jo označimo z $ftdim(G).$
+
+
+\end{document}
