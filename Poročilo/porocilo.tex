@@ -186,14 +186,14 @@ Rezultate za $ftdim = 4$ ponazorimo še s tabelo:
  		\hline 8 & 1525 & 2min1s \\
  		\hline 
  	\end{tabular} 
- 	\caption{Rezultati za ftdim = 4}
+ 	\caption{Rezultati za $ftdim = 4$}
  	\label{tab:ftdim4}
 \end{table}
 
 
 Nato sva se lotili iskanja odgovora na vprašanje naloge: za $ftdim(G) = 5$ sva najprej ugotovili, da za manj kot $7$ 
 vozlišč tak graf sploh ne obstaja. Na $7$ vozliščih obstajata dva ustrezna grafa, katera je algoritem našel in izrisal v 
-$5.96$ sekundah.
+$5.96$ sekundah. Ta sta prikazana na slikah 1 in 2.
 
 \begin{figure}[H]
     \centering
@@ -211,7 +211,7 @@ $5.96$ sekundah.
 
 Na $8$ vozliščih obstaja že bistveno več grafov, za katere velja $dim(G) = 2$ in $ftdim(G) = 5$, in sicer $65$, tudi koda 
 pa v primerjavi z grafi na $7$ vozliščih rabi veliko dlje časa, da se izvede; ustrezne grafe je poiskala in izrisala v $1$ 
-minuti in $58$ sekundah. 
+minuti in $58$ sekundah. Nekateri izmed teh so prikazani v slikah, ki sledijo.
 
 \begin{figure}[H]
     \centering
@@ -263,7 +263,7 @@ minuti in $58$ sekundah.
 \end{figure}
 
 Pri iskanju in risanju takih grafov na 9 vozliščih se je koda po pol ure dela prenehala izvajati in ni našla vseh ustreznih 
-grafov. 
+grafov. Trije izmed teh so prikazani na slikah 10, 11 in 12.
 
 \begin{figure}[H]
     \centering
@@ -301,8 +301,6 @@ Rezultate za $ftdim = 5$ ponazorimo še s tabelo:
  	\label{tab:osebe}
 \end{table}
 
-
-
 Očitno se torej že pri $ftdim = 5$ in $9$ vozliščih, kar se zdi dokaj malo, koda ne izvede v sprejemljivem času. Preverili 
 sva še, kako časovno zahtevno je iskanje grafov z $dim = 2$ in $ftdim = 6$, za kar je potrebnih najmanj $12$ vozlišč; tudi 
 ta koda se ni izvedla v normalnem času, zato sva za primere pri $ftdim = 5$ in več kot $8$ vozlišč ter $ftdim = 6, 7, ...$ 
@@ -315,11 +313,13 @@ V naslednji fazi sva želeli narediti kodo, ki bi poiskala tudi večje grafe. To
 oziroma s simuliranim ohlajanjem. Tako kot v prvi fazi sva kodo najprej preizkusili za $dim = 2$ in $ftdim = 4.$ Pri tem 
 sva za grafe vzeli že večje grafe s številom vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči.
  
-Pri simuliranem ohlajanju se je pojavila težava pri kodah metricna\_dolzina in na\_napake\_odporna\_metricna\_dolzina, zato 
-je ta koda drugačna kot je pri sistematičnem iskanju. 
+Pri simuliranem ohlajanju se je pojavila težava pri kodah metricna\_dolzina in \\ na\_napake\_odporna\_metricna\_dolzina, zato 
+sta ti kodi drugačni kot pri sistematičnem iskanju. 
 
 Ta pristop je definiran tako, da vrne najboljši graf pri danih $dim$ in $ftdim.$ S tem pristopom lahko mnogo hitreje
-poiščemo tudi grafe na veliko vozliščih in višjimi na napake odpornimi metričnimi dimenzijami.
+poiščemo tudi grafe na veliko vozliščih in večjimi na napake odpornimi metričnimi dimenzijami.
+
+Nekateri izmed poiskanih grafov so prikazani v nadaljevanju.
 
 
 \begin{figure}[H]
