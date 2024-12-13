@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,7 +735,7 @@ Overfull \hbox (11.42233pt too wide) in paragraph at lines 426--428
 AED: lastpage setting LastPage
 [12] (porocilo.aux)
 Package rerunfilecheck Info: File `porocilo.out' has not changed.
-(rerunfilecheck)             Checksum: 1AEF760F127969D89610AAD735799119;1465.
+(rerunfilecheck)             Checksum: A63D3B1B4F3FC8FAE40850862E4BFFF2;1465.
  ) 
 Here is how much of TeX's memory you used:
  16537 strings out of 475385
@@ -746,7 +746,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,13n,77p,1133b,534s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on porocilo.pdf (12 pages, 942984 bytes).
+Output written on porocilo.pdf (12 pages, 942983 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  50 named destinations out of 1000 (max. 500000)
