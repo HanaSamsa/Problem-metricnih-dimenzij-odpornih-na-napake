@@ -792,18 +792,8 @@ INPUT .\porocilo.aux
 INPUT porocilo.aux
 INPUT porocilo.aux
 OUTPUT porocilo.aux
-INPUT .\porocilo.out
-INPUT porocilo.out
-INPUT .\porocilo.out
-INPUT porocilo.out
-INPUT .\porocilo.out
-INPUT porocilo.out
-INPUT .\porocilo.out
-INPUT porocilo.out
-OUTPUT porocilo.pdf
-INPUT .\porocilo.out
-INPUT .\porocilo.out
 OUTPUT porocilo.out
+OUTPUT porocilo.pdf
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -898,6 +888,7 @@ INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symb
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -905,7 +896,6 @@ INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
-INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\Hana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Users\Hana\Desktop\Hana\faks\Finančni praktikum\Seminarska naloga\257_1.png
