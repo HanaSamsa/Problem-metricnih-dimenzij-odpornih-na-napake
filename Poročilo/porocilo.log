@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,86 +613,86 @@ LaTeX Warning: Reference `eq:3' on page 2 undefined on input line 127.
 LaTeX Warning: Reference `eq:4' on page 2 undefined on input line 127.
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 147.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 144.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:188: Package caption Error: \caption outside float.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:184: Package caption Error: \caption outside float.
 
 See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188  \caption
-               {Rezultati za $ftdim = 4$}
+l.184  	\caption
+                {Rezultati za $ftdim = 4$}
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
 section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:190: Too many }'s.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:186: Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.190 \end{table}
+l.186 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:190: Extra \endgroup.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:186: Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.190 \end{table}
+l.186 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:190: Too many }'s.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:186: Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.190 \end{table}
+l.186 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:190: LaTeX Error: \begin{document} ended by \end{table}.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:186: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190 \end{table}
+l.186 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:190: Extra \endgroup.
+c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex:186: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.190 \end{table}
+l.186 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png, id=38, 182.8431pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 198.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 193.
 (pdftex.def)             Requested size: 113.24197pt x 210.37491pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 199.
+(Font)              <10.95> on input line 194.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png, id=40, 368.577pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png  used on input line 205.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png  used on input line 200.
 (pdftex.def)             Requested size: 113.24197pt x 104.35818pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png>]
 
-Package lastpage Warning: Rerun to get the references right on input line 242.
+Package lastpage Warning: Rerun to get the references right on input line 237.
 
 
 AED: lastpage setting LastPage
@@ -714,14 +714,14 @@ Package rerunfilecheck Info: Checksums for `porocilo.out':
  ) 
 Here is how much of TeX's memory you used:
  16244 strings out of 475385
- 277670 string characters out of 2777379
+ 277672 string characters out of 2777379
  748185 words of memory out of 3000000
  37216 multiletter control sequences out of 15000+600000
- 544199 words of font info for 137 fonts, out of 8000000 for 9000
+ 544203 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,77p,1133b,477s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on porocilo.pdf (5 pages, 264253 bytes).
+Output written on porocilo.pdf (5 pages, 263125 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
