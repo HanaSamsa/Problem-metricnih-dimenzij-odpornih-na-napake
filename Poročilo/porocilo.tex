@@ -13,6 +13,7 @@
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage{sectsty}
 \usepackage{url, lipsum}
+\usepackage{float}
 
 \usepackage{lmodern}
 \usepackage{amsmath,amsfonts}
@@ -36,7 +37,7 @@
 		\HRule{0.5pt} \\
 		\LARGE \textbf{\uppercase{Problem na napake odporne metrične dimenzije}}
 		\HRule{2pt} \\ [0.5cm]
-		\normalsize \date{december 2024} \vspace*{5\baselineskip}}
+		\normalsize \date{December 2024} \vspace*{5\baselineskip}}
 \author{
 		Anamarija Potokar, Hana Samsa 
         \vspace{1 cm} \\
@@ -135,10 +136,7 @@ Komentirana koda je dostopna na \href{https://github.com/HanaSamsa/Problem-metri
 
 \section{Sistematično iskanje}
 
-V prvi fazi sva se iskanja ustreznih grafov z lastnostima dim($G$)$ =2$ in ftdim($G$) = 5, 6, 7 
-oziroma več, lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in 
-število vozlišč, za katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti dim = 2 
-in ftdim = 4:
+V prvi fazi sva se iskanja ustreznih grafov z lastnostima dim($G$)$ =2$ in ftdim($G$) = 5, 6, 7, ... lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti dim = 2 in ftdim = 4:
 \begin{itemize}
     \item na 4 vozliščih obstajata dva taka grafa, čas izvajanja kode je 0.04 sekunde,
     \item na 5 vozliščih obstaja 8 takih grafov, čas izvajanja kode je 0.11 sekunde,
@@ -146,9 +144,27 @@ in ftdim = 4:
     \item na 7 vozliščih obstaja 232 takih grafov, čas izvajanja kode je 7.19 sekund,
     \item na 8 vozliščih obstaja 1525 takih grafov, čas izvajanja kode je 2 minuti in 1 sekunda.
 \end{itemize}
-Nato sva se lotili iskanja odgovora na vprašanje naloge: za ftdim($G$) = 5 sva najprej ugotovili, da za 
-manj kot 7 vozlišč tak graf sploh ne obstaja. Na 7 vozliščih obstajata dva ustrezna grafa, katera je 
-algoritem našel in izrisal v 5.96 sekundah:
+
+Rezultate za ftdim = 4 ponazorimo še s tabelo:
+
+\begin{table}[H] 
+ \centering 
+ \begin{tabular}{|c|c|c|} 
+ \hline 
+ \textbf{št. vozlišč} & \textbf{št. grafov} & \textbf{čas izvajanja} \\
+ \hline 4 & 2 & 0.04s  \\ 
+ \hline 5 & 8 & 0.11s \\ 
+ \hline 6 & 46 & 0.69s \\ 
+ \hline 7 & 232 & 7.19s \\
+ \hline 8 & 1525 & 2min1s \\
+ \hline 
+ \end{tabular} 
+ \caption{Rezultati za ftdim = 4}
+ \label{tab:osebe}
+\end{table}
+
+
+Nato sva se lotili iskanja odgovora na vprašanje naloge: za ftdim($G$) = 5 sva najprej ugotovili, da za manj kot 7 vozlišč tak graf sploh ne obstaja. Na 7 vozliščih obstajata dva ustrezna grafa, katera je algoritem našel in izrisal v 5.96 sekundah:
 
 \begin{figure}[h]
     \centering
@@ -158,21 +174,33 @@ algoritem našel in izrisal v 5.96 sekundah:
 \end{figure}
 % tuki vstaviva slikice obeh grafov
 
-Na 8 vozliščih obstaja že bistveno več grafov, za katere velja dim($G$) = 2 in ftdim($G$) = 5, in sicer 65, 
-tudi koda pa v primerjavi z grafi na 7 vozliščih rabi veliko dlje časa, da se izvede; ustrezne grafe je poiskala 
-in izrisala v 1 minuti in 58 sekundah. Primer nekaj takšnih grafov: 
+
+Na 8 vozliščih obstaja že bistveno več grafov, za katere velja dim($G$) = 2 in ftdim($G$) = 5, in sicer 65, tudi koda pa v primerjavi z grafi na 7 vozliščih rabi veliko dlje časa, da se izvede; ustrezne grafe je poiskala in izrisala v 1 minuti in 58 sekundah. Primer nekaj takšnih grafov: 
 
 % vstaviva ne vem par grafov kateri so tko vizualno očitno različni bom shranla slikice pa ti poslala
 
-Pri iskanju in risanju takih grafov na 9 vozliščih se je koda po pol ure dela prenehala izvajati in ni našla 
-vseh ustreznih grafov. Primer nekaj takšnih grafov:
+Pri iskanju in risanju takih grafov na 9 vozliščih se je koda po pol ure dela prenehala izvajati in ni našla vseh ustreznih grafov. Primer nekaj takšnih grafov:
 
 % slikce
 
-Očitno se torej že pri ftdim=5 in 9 vozliščih koda ne izvede v sprejemljivem času. Preverili sva še, kako 
-časovno zahtevno je iskanje grafov z dim = 2 in ftdim = 6, za kar je potrebnih najmanj 12 vozlišč; tudi ta 
-koda se ni izvedla v normalnem času, zato sva za primere pri ftdim = 5 in več kot 8 vozlišč ter ftdim = 6, 7, ... 
-grafe iskali s pomočjo metahevrističnih algoritmov. 
+Rezultate za ftdim = 5 ponazorimo še s tabelo:
+
+\begin{table}[H] % Use [H] instead of [h!]
+ \centering 
+ \begin{tabular}{|c|c|c|} 
+ \hline 
+ \textbf{št. vozlišč} & \textbf{št. grafov} & \textbf{čas izvajanja} \\
+ \hline 7 & 2 & 5.96s  \\ 
+ \hline 8 & 65 & 1min58s \\
+ \hline 
+ \end{tabular} 
+ \caption{Rezultati za ftdim = 5}
+ \label{tab:osebe}
+\end{table}
+
+
+
+Očitno se torej že pri ftdim=5 in 9 vozliščih, kar se zdi dokaj malo, koda ne izvede v sprejemljivem času. Preverili sva še, kako časovno zahtevno je iskanje grafov z dim = 2 in ftdim = 6, za kar je potrebnih najmanj 12 vozlišč; tudi ta koda se ni izvedla v normalnem času, zato sva za primere pri ftdim = 5 in več kot 8 vozlišč ter ftdim = 6, 7, ... grafe iskali s pomočjo metahevrističnih algoritmov. 
 
 
 
