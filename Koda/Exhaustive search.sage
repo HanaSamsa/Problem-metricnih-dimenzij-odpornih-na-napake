@@ -77,6 +77,26 @@ def metricna_dimenzija(G):
 
     return len(razlocujoca_mnozica)
 
+# DEFINIRAMO FUNKCIJO, KI IZRAČUNA MINIMALNO ŠTEVILO VOZLIŠČ, POTREBNIH ZA IZPOLNJEVANJE POGOJEV ZA dim, ftdim:
+# teoretični minimum za št. potrebnih vozlišč je enak ftdim, vendar pa je ponavadi potrebnih (kar nekaj) več vozlišč;
+# zato namesto da za vsako ftdim posebaj preverjamo, za katero vrednost vozlišč nam funkcija poišče kake grafe, DEFINIRAMO
+# tole funkcijo, ki nam pove, pri katerem št. vozlišč začnemo iskati grafe.
+
+def min_vozlisc_za_dim_ftdim(ciljna_dim, ciljna_ftdim):
+
+    st_vozlisc = ciljna_ftdim
+
+    while True:
+        # generiramo vse povezane grafe s st_vozlisc vozlišči
+        for G in graphs.nauty_geng(f"{st_vozlisc} -c"):
+            ftdim = na_napake_odporna_metricna_dimenzija(G)
+            dim = metricna_dimenzija(G)
+            if ftdim == ciljna_ftdim and dim == ciljna_dim:
+                return st_vozlisc  # vrnemo takoj, ko najdemo prvi ustrezen graf
+
+        # sicer pa povečamo število vozlišč in nadaljujemo
+        st_vozlisc += 1
+
 
 # DEFINIRAMO FUNKCIJO, KI POIŠČE USTREZNE GRAFE:
 
