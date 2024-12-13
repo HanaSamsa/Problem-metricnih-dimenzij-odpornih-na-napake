@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,7 +718,7 @@ File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820
 Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png  used on input line 385.
 (pdftex.def)             Requested size: 113.24197pt x 112.66148pt.
  [11 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 424.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 425.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -727,7 +727,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (11.42233pt too wide) in paragraph at lines 423--425
+Overfull \hbox (11.42233pt too wide) in paragraph at lines 424--426
 []$\T1/lmtt/m/n/12 https : / / github . com / HanaSamsa / Problem-[]metricnih-[]dimenzij-[]odpornih-[]na-[]napake /
  []
 
@@ -746,7 +746,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,13n,77p,1133b,534s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on porocilo.pdf (12 pages, 942719 bytes).
+Output written on porocilo.pdf (12 pages, 942923 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  50 named destinations out of 1000 (max. 500000)
