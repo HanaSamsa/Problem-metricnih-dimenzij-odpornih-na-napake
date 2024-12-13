@@ -130,9 +130,28 @@ $d(u, i) \neq d(v, i)$ in je hkrati $i \in S$ bo potem vsota enaka 2, kar pa je 
 
 \section{Potek dela}
 
-V prvi fazi projekta sva identificirali grafe z določenimi lastnostmi glede na njihovo metrično dimenzijo in na napake odporno metrično dimenzijo za različna števila vozlišč. V najini kodi sva na začetku napisali funkciji, ki za povezan graf $G$ izračunata njegovi $dim$ in $ftdim$. Funkciji delujeta tako, da za graf $G$ preštejeta število vozlišč in izračunata medsebojne razdalje za poljuben par, sestavita koeficientno matriko, rešita ustrezen CLP in vrneta moč razrešljive množice. Dodatno sva definirali še funkcijo, ki za željeni $dim$ in $ftdim$ izračuna minimalno potrebno število vozlišč grafa, ki izpolnjuje ta pogoja. V teoriji je sicer najmanjše potrebno število vozlišč enako kar $ftdim$, vendar pa je v praksi to število ponavadi (dosti) večje. Funkciji sva nato uporabili za iskanje ustreznih grafov, izpisali njihovo število pri dani $dim$, $ftdim$ in številu vozlišč ter jih izrisali. \\[0.5em]
-Sistematično iskanje je bilo zaradi časovne zahtevnosti za večje grafe in višje $ftdim$ zelo omejeno, zato sva v drugi fazi za iskanje grafov uporabili metahevristični algoritem \textit{simulated annealing} oziroma \textit{simulirano ohlajanje}, preizkusili pa sva tudi \textit{hill climbing}. To sta vrsti algoritma v stohastični optimizaciji, ki uporabljata naključnost za iskanje čim boljših rešitev danega problema v razumnem času, še posebej, kadar je popolna rešitev zaradi kompleksnosti problema težko dosegljiva. \\
-Za definicijo funkcije simuliranega hlajenja sva najprej implementirali funkcijo, ki grafu naključno odstrani ali doda povezavo. To sva nato uporabili za primerjavo z izhodiščnim grafom, in če je bil prilagojen graf glede na njegovi $dim$ in $ftdim$ bližje iskani rešitvi, sva ga sprejeli, sicer pa se vrnili na izhodiščni graf. Ko je zanka pretekla največje število iteracij, določeno z argumentom funkcije, se je prekinila, funkcija pa je izrisala najboljši najden graf ter njegovi $dim$ in $ftdim$.
+V prvi fazi projekta sva identificirali grafe z določenimi lastnostmi glede na njihovo metrično 
+dimenzijo in na napake odporno metrično dimenzijo za različna števila vozlišč. V najini kodi sva 
+na začetku napisali funkciji, ki za povezan graf $G$ izračunata njegovi $dim$ in $ftdim$. Funkciji 
+delujeta tako, da za graf $G$ preštejeta število vozlišč in izračunata medsebojne razdalje za poljuben 
+par, sestavita koeficientno matriko, rešita ustrezen CLP in vrneta moč razrešljive množice. Dodatno 
+sva definirali še funkcijo, ki za željeni $dim$ in $ftdim$ izračuna minimalno potrebno število 
+vozlišč grafa, ki izpolnjuje ta pogoja. V teoriji je sicer najmanjše potrebno število vozlišč enako 
+kar $ftdim$, vendar pa je v praksi to število ponavadi (dosti) večje. Funkciji sva nato uporabili za 
+iskanje ustreznih grafov, izpisali njihovo število pri dani $dim$, $ftdim$ in številu vozlišč ter jih 
+izrisali.
+
+Sistematično iskanje je bilo zaradi časovne zahtevnosti za večje grafe in višje $ftdim$ zelo omejeno, 
+zato sva v drugi fazi za iskanje grafov uporabili metahevristični algoritem \textit{simulated annealing} 
+oziroma \textit{simulirano ohlajanje}, preizkusili pa sva tudi \textit{hill climbing}. To sta vrsti 
+algoritma v stohastični optimizaciji, ki uporabljata naključnost za iskanje čim boljših rešitev danega 
+problema v razumnem času, še posebej, kadar je popolna rešitev zaradi kompleksnosti problema težko dosegljiva. 
+
+Za definicijo funkcije simuliranega hlajenja sva najprej implementirali funkcijo, ki grafu naključno odstrani ali 
+doda povezavo. To sva nato uporabili za primerjavo z izhodiščnim grafom, in če je bil prilagojen graf glede na 
+njegovi $dim$ in $ftdim$ bližje iskani rešitvi, sva ga sprejeli, sicer pa se vrnili na izhodiščni graf. Ko je 
+zanka pretekla največje število iteracij, določeno z argumentom funkcije, se je prekinila, funkcija pa je izrisala 
+najboljši najden graf ter njegovi $dim$ in $ftdim$.
 
 \section{Koda}
 Komentirana koda je dostopna na \href{https://github.com/HanaSamsa/Problem-metricnih-dimenzij-odpornih-na-napake.git}{povezavi}.
@@ -292,12 +311,15 @@ grafe iskali s pomočjo metahevrističnih algoritmov.
 
 \section{Metahevristično iskanje}
 
-V naslednji fazi sva želeli narediti kodo, ki bi poiskala tudi večje grafe. To sva dosegli s metahevrističnim pristopom. Tako
-kot v prvi fazi sva kodo najprej preizkusili za $dim = 2$ in $ftdim = 4.$ Pri tem sva za grafe vzeli že večje grafe s številom
-vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči.
+V naslednji fazi sva želeli narediti kodo, ki bi poiskala tudi večje grafe. To sva dosegli s metahevrističnim pristopom
+oziroma s simuliranim ohlajanjem. Tako kot v prvi fazi sva kodo najprej preizkusili za $dim = 2$ in $ftdim = 4.$ Pri tem 
+sva za grafe vzeli že večje grafe s številom vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči.
  
-Pri metahevrističnem iskanju se je pojavila težava pri kodah metricna\_dolzina in na\_napake\_odporna\_metricna\_dolzina, zato 
+Pri simuliranem ohlajanju se je pojavila težava pri kodah metricna\_dolzina in na\_napake\_odporna\_metricna\_dolzina, zato 
 je ta koda drugačna kot je pri sistematičnem iskanju. 
+
+Ta pristop je definiran tako, da vrne najboljši graf pri danih $dim$ in $ftdim.$ S tem pristopom lahko mnogo hitreje
+poiščemo tudi grafe na veliko vozliščih in višjimi na napake odpornimi metričnimi dimenzijami.
 
 
 \begin{figure}[H]
@@ -314,6 +336,51 @@ je ta koda drugačna kot je pri sistematičnem iskanju.
     \label{fig:slika2520}
 \end{figure}
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 6,$ in število vozlišč je $15.$}
+    \label{fig:slika2615}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 6,$ in število vozlišč je $20.$}
+    \label{fig:slika2620}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 7,$ in število vozlišč je $15.$}
+    \label{fig:slika2715}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 7,$ in število vozlišč je $20.$}
+    \label{fig:slika2720}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 8,$ in število vozlišč je $15.$}
+    \label{fig:slika2815}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png}
+    \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 8,$ in število vozlišč je $20.$}
+    \label{fig:slika2820}
+\end{figure}
 
 
 \end{document}
