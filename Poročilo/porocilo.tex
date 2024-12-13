@@ -9,7 +9,6 @@
 \usepackage{lastpage}
 \usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
 \usepackage[font=small, labelfont=bf]{caption}
-\usepackage{fourier}
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage{sectsty}
 \usepackage{url, lipsum}
@@ -50,8 +49,9 @@
 \newpage
 
 \section{Na napake odporna metrična dimenzija}
-Množica $S \in V$ je v grafu $G$ razrešljiva, če za vsak par $x, y \in V(G)$ 
-ostaja $s \in S,$ da velja $d(x, s) \neq d(y, s).$ Rečemo, da sta $x$ in $y$
+
+Množica $S \in V$ v grafu $G$ je razrešljiva, če za vsak par vozlišč $x, y \in V(G)$ 
+ostaja vozlišče $s \in S,$ da velja $d(x, s) \neq d(y, s).$ Rečemo, da sta $x$ in $y$
 razrešeni z vozliščem $s$. Množica $S$ je odporna na napake, če je 
 $S \setminus \{v\}$ prav tako razrešljiva za vsak $v \in S.$ 
 
@@ -59,21 +59,32 @@ Metrična dimenzija neusmerjenega in povezanega grafa $G = (V, E)$ je najmanjša
 podmnožica nabora vozlišč $S \subset V$ z lastnostjo, da so vsa vozlišča v $V$ 
 enolično določena z njihovimi razdaljami do vozlišč podmnožice $S$.
 
-Primer uporabe metrične dimenzije je problem robotske navigacije. Pri tem pusitmo
-robota, da navigira v nekem prostoru, ki je določen z grafom $G$. Pri tem so 
-povezave grafa $G$ poti. Robot pošlje signal do posameznega niza vozlišč imenovanih 
-orientacijske točke, da ugotovi kako daleč od njih se nahaja. Pri tem je določanje 
-najmanjše množice orientacijskih točk in njihov položaj, da robot lahko enolično 
-določi, kje se nahaja, simetričen problemu metrične dolžine. Problem nastane, 
-če ena od teh točk ne deluje pravilno, kar pomeni da robot nima dovolj informacij 
-za enolično določanje svoje lokacije. Pri teh težavah nam prav pridejo metrične 
-dolžine, odporne na napake. 
-Nabor za razreševanje, odporen na napake zagotavlja, da tudi če ena od imenovanih 
-točk ne deluje pravilnno bomo dobili prave informacije.
+%Primer uporabe metrične dimenzije je problem robotske navigacije. Pri tem pusitmo
+%robota, da navigira v nekem prostoru, ki je določen z grafom $G$. Pri tem so 
+%povezave grafa $G$ poti. Robot pošlje signal do posameznega niza vozlišč imenovanih 
+%orientacijske točke, da ugotovi kako daleč od njih se nahaja. Pri tem je določanje 
+%najmanjše množice orientacijskih točk in njihov položaj, da robot lahko enolično 
+%določi, kje se nahaja, simetričen problemu metrične dolžine. Problem nastane, 
+%če ena od teh točk ne deluje pravilno, kar pomeni da robot nima dovolj informacij 
+%za enolično določanje svoje lokacije. Pri teh težavah nam prav pridejo metrične 
+%dolžine, odporne na napake. 
+%Nabor za razreševanje, odporen na napake zagotavlja, da tudi če ena od imenovanih 
+%točk ne deluje pravilnno bomo dobili prave informacije.
 
-Metrična dimenzija $G$, odporna na napake, je velikost najmanjše razčlenujoče 
-množice $S,$ odporne na napake (v primeru robotske navigacije je to nabor za 
-razreševanje) in jo označimo z $ftdim(G).$
+Na napake odporna metrična dimenzija grafa $G$, je velikost najmanjše razčlenujoče 
+množice $S,$ odporne na napake in jo označimo z $ftdim(G).$
+\vspace{0,5 cm}
+
+Naloga projektne naloge je bila, da s pomočjo celoštevilskega linearnega programa 
+poiščemo grafe z $dim(G) = 2$ in $ftdim(G) = 5, 6, 7$ ali več. Pri tem se za manjše
+grafe, torej grafe z malo vozlišči, uporablja sistematično iskanje (ang.\textit{
+systematic search}), za večje grafe pa metahevristični pristop (ang.\textit{ simulated 
+annealing search}).
+
+\section{Potek dela}
+
+
+\section{Ugotovitve}
 
 
 \end{document}
