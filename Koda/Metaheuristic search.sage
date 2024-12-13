@@ -2,103 +2,90 @@ from sage.all import *
 import random
 import matplotlib.pyplot as plt
 
-# funkcija Tweak za prilagajanje grafa: naključno prilagodimo graf z dodajanjem/odstranjevanjem vozlišča
+def metricna_dimenzija(G):
+    n = G.num_verts()
+    razdalje = G.distance_all_pairs()
 
-def tweak_graph(G): 
-    
-    robovi = list(G.edges(labels = False))
-    if random.random() < 0.5 and robovi:
-        # odstranimo naključno vozlišče
-        G.delete_edge(random.choice(robovi))
+    p = MixedIntegerLinearProgram(maximization = False)
+    x = p.new_variable(binary = True)
+    p.set_objective(sum(x[i] for i in G))
+    for u, v in Combinations(G, 2):
+        p.add_constraint(sum(x[i] for i in G if razdalje[u].get(i, n) != razdalje[v].get(i, n)) >= 1)
+
+    p.solve()
+    razlocujoca_mnozica = [i for i in G if round(p.get_values(x[i])) == 1]
+
+    return len(razlocujoca_mnozica)
+
+
+def na_napake_odporna_metricna_dimenzija(G):
+    n = G.num_verts() # izračunam število vozlišč grafa G
+    razdalje = G.distance_all_pairs() # matrika razdalj med vsakim parom vozlišč iz G
+
+    # inicializacija CLP:
+    p = MixedIntegerLinearProgram(maximization = False) # minimizacija
+    x = p.new_variable(binary = True) # ustvarjanje binarne spremenljivke za uporabo znotraj CLP p
+    p.set_objective(sum(x[i] for i in G))
+    # pogoj: vsak par (u, v) ima vsaj dve razločujoči vozlišči v S:
+    for u, v in Combinations(G, 2):
+        p.add_constraint(sum(x[i] for i in G if razdalje[u].get(i, n) != razdalje[v].get(i, n)) >= 2)
+
+    # reševanje CLP:
+    p.solve()
+    na_napake_odporna_razlocujoca_mnozica = [i for i in G if round(p.get_values(x[i])) == 1]
+
+    # vrnemo kardinalnost = moč razločujoče množice:
+    return len(na_napake_odporna_razlocujoca_mnozica)
+
+
+def tweak_graf(G):
+    povezave = list(G.edges(labels=False))
+    if random.random() < 0.5 and povezave:
+        # Izbrišemo naključno povezavo
+        G.delete_edge(random.choice(povezave))
     else:
-        # dodamo naključno vozlišče
+        # Dodao naključno povezavo
         u, v = random.sample(range(G.num_verts()), 2)
         if not G.has_edge(u, v):
             G.add_edge(u, v)
 
 
-# Hill-Climbing metahevristika
+def simulated_annealing(ciljna_dim, ciljna_ftdim, st_vozlisc, iteracije=1000, temperatura=100, ohlajanje=0.95):
+    # Definiramo začetni graf
+    trenuten_graf = graphs.CompleteGraph(st_vozlisc)
+    
+    trenutna_dim = metricna_dimenzija(trenuten_graf)
+    trenuten_ftdim = na_napake_odporna_metricna_dimenzija(trenuten_graf)
+    best_graf = trenuten_graf
+    best_dim = trenutna_dim
+    best_ftdim = trenuten_ftdim
 
-def hill_climbing(ciljna_dim, ciljna_ftdim, st_vozlisc, max_iteracij=1000):
- 
-    # generiramo prvotni graf
-    trenutni_graf = graphs.CompleteGraph(st_vozlisc)
-    trenutna_dim = metricna_dimenzija(trenutni_graf)
-    trenutna_ftdim = na_napake_odporna_metricna_dimenzija(trenutni_graf)
+    temp = temperatura
 
-    if trenutna_dim == ciljna_dim and trenutna_ftdim == ciljna_ftdim:
-        return trenutni_graf.show(), trenutna_dim, trenutna_ftdim
-
-    for iteracija in range(max_iteracij):
-        # naredimo kopijo in prilagodimo graf
-        nov_graf = trenutni_graf.copy()
-        tweak_graph(nov_graf)
-
-        # ocenimo nov graf
-        nova_dim = metricna_dimenzija(nov_graf)
-        nova_ftdim = na_napake_odporna_metricna_dimenzija(nov_graf)
-
-        # če je boljši, ga sprejmemo
-        if nova_dim == ciljna_dim and nova_ftdim == ciljna_ftdim:
-            return nov_graf, nova_dim, nova_ftdim
-        elif abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) < abs(trenutna_dim - ciljna_dim) + abs(trenutna_ftdim - ciljna_ftdim):
-            trenutni_graf = nov_graf
-            trenutna_dim = nova_dim
-            trenutna_ftdim = nova_ftdim
-
-    return trenutni_graf.show(), trenutna_dim, trenutna_ftdim
-
-
-# Simulated Annealing metahevristika
-
-def simulated_annealing(ciljna_dim, ciljna_ftdim, st_vozlisc, max_iteracij = 1000, zacetna_temp = 100, alpha =0.95):
-
-    # generiramo začetni graf
-    trenutni_graf = graphs.CompleteGraph(st_vozlisc)
-    trenutna_dim = metricna_dimenzija(trenutni_graf)
-    trenutna_ftdim = na_napake_odporna_metricna_dimenzija(trenutni_graf)
-    naj_graf = trenutni_graf
-    naj_dim = trenutna_dim
-    naj_ftdim = trenutna_ftdim
-
-    temp = zacetna_temp
-
-    for iteracija in range(max_iteracij):
+    for iteration in range(iteracije):
         if temp <= 0:
             break
 
-        # naredimo kopijo in prilagodimo graf
-        nov_graf = trenutni_graf.copy()
-        tweak_graph(nov_graf)
+        # Naredimo kopijo in spremenimo graf s tweak funkcijo
+        nov_graf = trenuten_graf.copy()
+        tweak_graf(nov_graf)
 
-        # ocenimo nov graf
-        nova_dim = metricna_dimenzija(nov_graf)
-        nova_ftdim = na_napake_odporna_metricna_dimenzija(nov_graf)
+        nov_dim = metricna_dimenzija(nov_graf)
+        nov_ftdim = na_napake_odporna_metricna_dimenzija(nov_graf)
 
-        # kriterij, po katerem graf sprejmemo
-        spr = abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) - abs(trenutna_dim - ciljna_dim) - abs(trenutna_ftdim - ciljna_ftdim)
-        if spr < 0 or random.random() < exp(-spr / temp):
-            trenutni_graf = nov_graf
-            trenutna_dim = nova_dim
-            trenutna_ftdim = nova_ftdim
+        # Preverimo če dosega kriterije
+        delta = abs(nov_dim - ciljna_dim) + abs(nov_ftdim - ciljna_ftdim) - abs(trenutna_dim - ciljna_dim) - abs(trenuten_ftdim - ciljna_ftdim)
+        if delta < 0 or random.random() < exp(-delta / temp):
+            trenuten_graf = nov_graf
+            trenutna_dim = nov_dim
+            trenuten_ftdim = nov_ftdim
 
-            # posodobimo najboljšo rešitev
-            if abs(nova_dim - ciljna_dim) + abs(nova_ftdim - ciljna_ftdim) < abs(naj_dim - ciljna_dim) + abs(naj_ftdim - ciljna_ftdim):
-                naj_graf = nov_graf
-                naj_dim = nova_dim
-                naj_ftdim = nova_ftdim
+            # Če dosega kriterije posodobimo graf
+            if abs(nov_dim - ciljna_dim) + abs(nov_ftdim - ciljna_ftdim) < abs(best_dim - ciljna_dim) + abs(best_ftdim - ciljna_ftdim):
+                best_graf = nov_graf
+                best_dim = nov_dim
+                best_ftdim = nov_ftdim
+        temp *= ohlajanje
 
-        # hlajenje
-        temp *= alpha
-
-    return naj_graf.show(), naj_dim, naj_ftdim
-
-
-dim = 2
-ftdim = 9
-st_vozlisc = 15
-
-# poženemo hill climbing
-hc_graf, hc_dim, hc_ftdim = hill_climbing(dim, ftdim, st_vozlisc)
-print("Rezultati Hill-Climbing-a:", hc_graf, hc_dim, hc_ftdim)
-
+    best_graf.show()
+    return best_graf, best_dim, best_ftdim
