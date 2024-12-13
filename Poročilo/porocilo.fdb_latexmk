@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1734113260 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734113260
+["pdflatex"] 1734113593 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734113597
   "C:/Users/Hana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1734098334 84442 9db79ff97c22615a9eed626c11c68fac ""
   "C:/Users/Hana/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667484004 10787538 094b8659390416be4cd1d4a6f5b9298a ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -146,10 +146,10 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png" 1734111405 22094 413c4bb99bc81df5e6ab66319e2ddddd ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png" 1734111416 33432 666c8ccbdfb9a3ff6795f1da29e9b7d7 ""
-  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734113253 9554 7364596219d59982493e12e4d822e6e7 ""
-  "porocilo.aux" 1734113260 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "porocilo.out" 0 -1 0 "pdflatex"
-  "porocilo.tex" 1734113253 9554 7364596219d59982493e12e4d822e6e7 ""
+  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734113592 8921 f5cc4d6db9c8b5107cb3b46ad1cb3251 ""
+  "porocilo.aux" 1734113597 2835 540545e9b359d3e54ff3860bf0db62e9 "pdflatex"
+  "porocilo.out" 1734113597 748 ae6940ca09cb7c4efa7b928d20fda5e3 "pdflatex"
+  "porocilo.tex" 1734113592 8921 f5cc4d6db9c8b5107cb3b46ad1cb3251 ""
   (generated)
   "porocilo.aux"
   "porocilo.log"
