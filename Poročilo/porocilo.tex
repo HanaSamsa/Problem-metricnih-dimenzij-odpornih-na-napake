@@ -394,17 +394,14 @@ Kot dodatek sva poizkusili večje grafe z določeno na
 
 \section{Ugotovitve}
 
-Najina pričakovanja so bila, da grafov z na napako odporne metrične dimenzije ni veliko prav tako pa, 
-da jih je težko poiskati. Izkazalo se je, da to ni čisto res. Namreč se je število grafov, ko smo večale 
-število vozlišč hitro raslo. S sistematičnim iskanjem je to res nekoliko počasneje temveč je tudi zelo 
-učinkovito, saj preveri vse možne grafe in vrne točne rešitve. 
+Najina pričakovanja so bila, da grafov z na napako odporne metrično dimenzijo ni veliko, prav tako pa,
+da jih je težko poiskati. Izkazalo se je, da to ni čisto res. Namreč, ko sva večali število vozlišč, je s tem število ustreznih grafov zelo hitro naraščalo, hkrati pa je hitro naraščala tudi časovna zahtevnost najdbe vseh takih grafov. S sistematičnim iskanjem je to res nekoliko počasneje, vendar je tudi zelo učinkovito, saj preveri vse možne grafe in vrne točne rešitve. 
 
-S simuliranim ohlajanje je hitreje in omogoča preiskovanje večjih grafov ampak ne pridemo skoraj nikoli 
-do optimalne rešitve, saj koda vrne najboljši približek grafu.
+S simuliranim ohlajanjem je postopek iskanja hitrejši in omogoča preiskovanje večjih grafov in višjih na napake odpornih metričnih dimenzij, ampak skoraj nikoli ne pridemo do optimalne rešitve, saj koda vrne najboljši približek grafu.
 
-Domnevale smo da je lažje poiskati grafe, če je razlika med metrično dolžino in na napake odporno metrično
-dolžino manjša. Izkazalo se je, da to drži, kar je razvidno iz samega časa delovanja kode. Prav tako pa je
-čas delovanja kode krajši, če gre za manjše grafe oziroma grafe z manj vozlišči. 
+Domnevali sva, da je lažje poiskati grafe, če je razlika med metrično dimenzijo in na napake odporno metrično
+dimenzijo manjša. Izkazalo se je, da to drži, kar je razvidno iz samega časa delovanja kode. Prav tako pa je
+čas delovanja kode krajši, če gre za manjše grafe oziroma grafe z manj vozlišči ali pa z nižjo zahtevano na napake odporno metrično dimenzijo. 
 
 
 \section{Literatura in repozitorji}
