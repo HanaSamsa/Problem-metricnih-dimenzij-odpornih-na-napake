@@ -311,14 +311,17 @@ grafe iskali s pomočjo metahevrističnih algoritmov.
 
 \section{Metahevristično iskanje}
 
+\subsection{Simulirano ohlajanje}
+
 V naslednji fazi sva želeli narediti kodo, ki bi poiskala tudi večje grafe. To sva dosegli s metahevrističnim pristopom
 oziroma s simuliranim ohlajanjem. Tako kot v prvi fazi sva kodo najprej preizkusili za $dim = 2$ in $ftdim = 4.$ Pri tem 
-sva za grafe vzeli že večje grafe s številom vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči.
+sva za grafe vzeli že večje grafe s številom vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči. 
+Potem sva postopoma povečevali ciljno na napake odporno metrično dimenzijo.
  
 Pri simuliranem ohlajanju se je pojavila težava pri kodah metricna\_dolzina in \\ na\_napake\_odporna\_metricna\_dolzina, zato 
 sta ti kodi drugačni kot pri sistematičnem iskanju. 
 
-Ta pristop je definiran tako, da vrne najboljši graf pri danih $dim$ in $ftdim.$ S tem pristopom lahko mnogo hitreje
+Ta pristop je definiran tako, da vrne najboljši približek grafa pri danih $dim$ in $ftdim.$ S tem pristopom lahko mnogo hitreje
 poiščemo tudi grafe na veliko vozliščih in večjimi na napake odpornimi metričnimi dimenzijami.
 
 Nekateri izmed poiskanih grafov so prikazani v nadaljevanju.
@@ -383,6 +386,28 @@ Nekateri izmed poiskanih grafov so prikazani v nadaljevanju.
     \caption{Najboljši graf pri parametrih $dim = 2,$ $ftdim = 8,$ in število vozlišč je $20.$}
     \label{fig:slika2820}
 \end{figure}
+
+\subsection{Hill climbing}
+
+Kot dodatek sva poizkusili večje grafe z določeno na 
+
+
+\section{Ugotovitve}
+
+Najina pričakovanja so bila, da grafov z na napako odporne metrične dimenzije ni veliko prav tako pa, 
+da jih je težko poiskati. Izkazalo se je, da to ni čisto res. Namreč se je število grafov, ko smo večale 
+število vozlišč hitro raslo. S sistematičnim iskanjem je to res nekoliko počasneje temveč je tudi zelo 
+učinkovito, saj preveri vse možne grafe in vrne točne rešitve. 
+
+S simuliranim ohlajanje je hitreje in omogoča preiskovanje večjih grafov ampak ne pridemo skoraj nikoli 
+do optimalne rešitve, saj koda vrne najboljši približek grafu.
+
+Domnevale smo da je lažje poiskati grafe, če je razlika med metrično dolžino in na napake odporno metrično
+dolžino manjša. Izkazalo se je, da to drži, kar je razvidno iz samega časa delovanja kode. Prav tako pa je
+čas delovanja kode krajši, če gre za manjše grafe oziroma grafe z manj vozlišči. 
+
+
+\section{Literatura in repozitorji}
 
 
 \end{document}
