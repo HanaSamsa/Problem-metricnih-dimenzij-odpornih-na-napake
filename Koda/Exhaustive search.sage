@@ -77,25 +77,52 @@ def metricna_dimenzija(G):
 
     return len(razlocujoca_mnozica)
 
+# DEFINIRAMO FUNKCIJO, KI IZRAČUNA MINIMALNO ŠTEVILO VOZLIŠČ, POTREBNIH ZA IZPOLNJEVANJE POGOJEV ZA dim, ftdim:
+# teoretični minimum za št. potrebnih vozlišč je enak ftdim, vendar pa je ponavadi potrebnih (kar nekaj) več vozlišč;
+# zato namesto da za vsako ftdim posebaj preverjamo, za katero vrednost vozlišč nam funkcija poišče kake grafe, DEFINIRAMO
+# tole funkcijo, ki nam pove, pri katerem št. vozlišč začnemo iskati grafe.
+
+def min_vozlisc_za_dim_ftdim(ciljna_dim, ciljna_ftdim):
+
+    st_vozlisc = ciljna_ftdim
+
+    while True:
+        # generiramo vse povezane grafe s st_vozlisc vozlišči
+        for G in graphs.nauty_geng(f"{st_vozlisc} -c"):
+            ftdim = na_napake_odporna_metricna_dimenzija(G)
+            dim = metricna_dimenzija(G)
+            if ftdim == ciljna_ftdim and dim == ciljna_dim:
+                return st_vozlisc  # vrnemo takoj, ko najdemo prvi ustrezen graf
+
+        # sicer pa povečamo število vozlišč in nadaljujemo
+        st_vozlisc += 1
+
 
 # DEFINIRAMO FUNKCIJO, KI POIŠČE USTREZNE GRAFE:
 
-def poisci_grafe(ciljna_dim, ciljna_ftdim, st_vozlisc): # najmanjše možno število vozlišč za ftdim = 5 je 7, pod tem sploh ne preverjamo
-
-    grafi = [] # dodajali bomo ustrezne grafe
-
-    for G in graphs.nauty_geng(f'{st_vozlisc} -c'): # samo povezani grafi
-        dim = metricna_dimenzija(G)
-        ftdim = na_napake_odporna_metricna_dimenzija(G)
-        
-        if dim == ciljna_dim and ftdim == ciljna_ftdim:
-            sosedi = {v: list(G[v]) for v in G} # sosede potrebujemo za risanje grafov
-            grafi.append((G, st_vozlisc, dim, ftdim, sosedi))
-            plt.figure(figsize = (6, 6))
-            plot(G).show()  # izrišem grafe
-            plt.close()
+def poisci_grafe(ciljna_dim, ciljna_ftdim, st_vozlisc):
     
-    return len(grafi) # vrnemo število ustreznih grafov
+    # teoretični min je toliko vozlišč, kot je ftdim;
+    # v resnici pa je ponavadi potrebnih še več vozlišč
+    if st_vozlisc < ciljna_ftdim:
+        print(0) # št. ustreznih grafov je 0
+    
+    else:
+
+        grafi = [] # dodajali bomo ustrezne grafe
+
+        for G in graphs.nauty_geng(f'{st_vozlisc} -c'): # samo povezani grafi
+            dim = metricna_dimenzija(G)
+            ftdim = na_napake_odporna_metricna_dimenzija(G)
+        
+            if dim == ciljna_dim and ftdim == ciljna_ftdim:
+                sosedi = {v: list(G[v]) for v in G} # sosede potrebujemo za risanje grafov
+                grafi.append((G, st_vozlisc, dim, ftdim, sosedi))
+                plt.figure(figsize = (6, 6))
+                plot(G).show()  # izrišem grafe
+                plt.close()
+    
+        return len(grafi) # vrnemo število ustreznih grafov
 
 
 # Preverjamo ustrezne grafe na 7 vozliščih             
