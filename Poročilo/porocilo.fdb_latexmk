@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1734112330 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734112335
+["pdflatex"] 1734112956 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734112960
   "C:/Users/Hana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1734098334 84442 9db79ff97c22615a9eed626c11c68fac ""
   "C:/Users/Hana/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667484004 10787538 094b8659390416be4cd1d4a6f5b9298a ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -145,10 +145,11 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png" 1734111405 22094 413c4bb99bc81df5e6ab66319e2ddddd ""
-  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734112321 8208 efcc5c5ca8f3664dfe08471824500333 ""
-  "porocilo.aux" 1734112334 2492 88691d2220c28db25804b8a038be4e9e "pdflatex"
-  "porocilo.out" 1734112334 748 ae6940ca09cb7c4efa7b928d20fda5e3 "pdflatex"
-  "porocilo.tex" 1734112321 8208 efcc5c5ca8f3664dfe08471824500333 ""
+  "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png" 1734111416 33432 666c8ccbdfb9a3ff6795f1da29e9b7d7 ""
+  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734112954 8539 4963c59c7d84d62317b5aa980413488d ""
+  "porocilo.aux" 1734112959 2831 5a346301caff8d4ce995ac64e0c4289b "pdflatex"
+  "porocilo.out" 1734112959 748 ae6940ca09cb7c4efa7b928d20fda5e3 "pdflatex"
+  "porocilo.tex" 1734112954 8539 4963c59c7d84d62317b5aa980413488d ""
   (generated)
   "porocilo.aux"
   "porocilo.log"

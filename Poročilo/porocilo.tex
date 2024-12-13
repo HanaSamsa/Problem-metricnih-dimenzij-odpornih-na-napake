@@ -136,7 +136,9 @@ Komentirana koda je dostopna na \href{https://github.com/HanaSamsa/Problem-metri
 
 \section{Sistematično iskanje}
 
-V prvi fazi sva se iskanja ustreznih grafov z lastnostima dim($G$)$ =2$ in ftdim($G$) = 5, 6, 7, ... lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti dim = 2 in ftdim = 4:
+V prvi fazi sva se iskanja ustreznih grafov z lastnostima dim($G$)$ =2$ in ftdim($G$) = 5, 6, 7, ... 
+lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za 
+katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti dim = 2 in ftdim = 4:
 \begin{itemize}
     \item na 4 vozliščih obstajata dva taka grafa, čas izvajanja kode je 0.04 sekunde,
     \item na 5 vozliščih obstaja 8 takih grafov, čas izvajanja kode je 0.11 sekunde,
@@ -149,28 +151,37 @@ Rezultate za ftdim = 4 ponazorimo še s tabelo:
 
 \begin{table}[H] 
  \centering 
- \begin{tabular}{|c|c|c|} 
- \hline 
- \textbf{št. vozlišč} & \textbf{št. grafov} & \textbf{čas izvajanja} \\
- \hline 4 & 2 & 0.04s  \\ 
- \hline 5 & 8 & 0.11s \\ 
- \hline 6 & 46 & 0.69s \\ 
- \hline 7 & 232 & 7.19s \\
- \hline 8 & 1525 & 2min1s \\
- \hline 
- \end{tabular} 
- \caption{Rezultati za ftdim = 4}
- \label{tab:osebe}
+ 	\begin{tabular}{|c|c|c|} 
+ 	\hline 
+ 	\textbf{št. vozlišč} & \textbf{št. grafov} & \textbf{čas izvajanja} \\
+ 		\hline 4 & 2 & 0.04s  \\ 
+ 		\hline 5 & 8 & 0.11s \\ 
+ 		\hline 6 & 46 & 0.69s \\ 
+ 		\hline 7 & 232 & 7.19s \\
+ 		\hline 8 & 1525 & 2min1s \\
+ 		\hline 
+ 	\end{tabular} 
+ 	\caption{Rezultati za ftdim = 4}
+ 	\label{tab:ftdim4}
 \end{table}
 
 
-Nato sva se lotili iskanja odgovora na vprašanje naloge: za ftdim($G$) = 5 sva najprej ugotovili, da za manj kot 7 vozlišč tak graf sploh ne obstaja. Na 7 vozliščih obstajata dva ustrezna grafa, katera je algoritem našel in izrisal v 5.96 sekundah:
+Nato sva se lotili iskanja odgovora na vprašanje naloge: za ftdim($G$) = 5 sva najprej ugotovili, da za 
+manj kot 7 vozlišč tak graf sploh ne obstaja. Na 7 vozliščih obstajata dva ustrezna grafa, katera je 
+algoritem našel in izrisal v 5.96 sekundah. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png}
-    \caption{Maksimalno število povezav v odvisnosti od \(d\) pri različnih n.}
-    \label{fig:slika1}
+    \caption{Graf pri parametrih $dim = 2,$ $ftdim = 5,$ in število vozlišč je $7.$}
+    \label{fig:slika257_1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png}
+    \caption{Graf pri parametrih $dim = 2,$ $ftdim = 5,$ in število vozlišč je $7.$}
+    \label{fig:slika257_2}
 \end{figure}
 % tuki vstaviva slikice obeh grafov
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,11 +453,7 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 765.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (porocilo.aux
-
-LaTeX Warning: Label `tab:osebe' multiply defined.
-
-)
+) (porocilo.aux)
 \openout1 = `porocilo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -608,38 +604,40 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 55.
  [2]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 141.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 143.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png, id=59, 182.8431pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 171.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 175.
 (pdftex.def)             Requested size: 113.24197pt x 210.37491pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 172.
- 
+(Font)              <10.95> on input line 176.
+<C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png, id=61, 368.577pt x 339.669pt>
+File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png Graphic file (type png)
+<use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png>
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png  used on input line 182.
+(pdftex.def)             Requested size: 113.24197pt x 104.35818pt.
+ [4 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png>] 
 AED: lastpage setting LastPage
-[4 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png>] (porocilo.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+[5] (porocilo.aux)
 Package rerunfilecheck Info: File `porocilo.out' has not changed.
 (rerunfilecheck)             Checksum: AE6940CA09CB7C4EFA7B928D20FDA5E3;748.
  ) 
 Here is how much of TeX's memory you used:
- 16241 strings out of 475385
- 277437 string characters out of 2777379
- 748791 words of memory out of 3000000
- 37214 multiletter control sequences out of 15000+600000
+ 16252 strings out of 475385
+ 278005 string characters out of 2777379
+ 748915 words of memory out of 3000000
+ 37222 multiletter control sequences out of 15000+600000
  544120 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,77p,1133b,477s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on porocilo.pdf (4 pages, 233871 bytes).
+{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on porocilo.pdf (5 pages, 263395 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 43054 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 43059 words of extra memory for PDF output out of 51595 (max. 10000000)
 
