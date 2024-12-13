@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 DEC 2024 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -598,127 +598,127 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {C:/Users/Hana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 55.
+(Font)              <12> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 55.
+(Font)              <8> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 55.
+(Font)              <6> on input line 56.
  [2] [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 168.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 169.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 189.
+(Font)              <10.95> on input line 190.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png, id=75, 182.8431pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 200.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png  used on input line 201.
 (pdftex.def)             Requested size: 113.24197pt x 210.37491pt.
  [4]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png, id=87, 368.577pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png  used on input line 207.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png  used on input line 208.
 (pdftex.def)             Requested size: 113.24197pt x 104.35818pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png, id=88, 435.7881pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png  used on input line 218.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png  used on input line 219.
 (pdftex.def)             Requested size: 113.24197pt x 88.2652pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png, id=89, 357.7365pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png  used on input line 225.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png  used on input line 226.
 (pdftex.def)             Requested size: 113.24197pt x 107.51978pt.
  [5 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png, id=100, 455.301pt x 312.9291pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png  used on input line 232.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png  used on input line 233.
 (pdftex.def)             Requested size: 113.24197pt x 77.83098pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png, id=101, 374.3586pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png  used on input line 239.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png  used on input line 240.
 (pdftex.def)             Requested size: 113.24197pt x 102.74629pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png, id=102, 224.037pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png  used on input line 246.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png  used on input line 247.
 (pdftex.def)             Requested size: 113.24197pt x 171.68956pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png, id=103, 455.301pt x 328.8285pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png  used on input line 253.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png  used on input line 254.
 (pdftex.def)             Requested size: 113.24197pt x 81.78545pt.
  [6 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_2.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_3.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_4.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_5.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png, id=116, 281.853pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png  used on input line 260.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png  used on input line 261.
 (pdftex.def)             Requested size: 113.24197pt x 136.4664pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png, id=117, 220.4235pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png  used on input line 270.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png  used on input line 271.
 (pdftex.def)             Requested size: 113.24197pt x 174.50389pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png, id=118, 437.9562pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png  used on input line 277.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png  used on input line 278.
 (pdftex.def)             Requested size: 113.24197pt x 87.82466pt.
  [7 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_6.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_7.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png, id=130, 263.7855pt x 339.669pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png  used on input line 284.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png  used on input line 285.
 (pdftex.def)             Requested size: 113.24197pt x 145.8164pt.
  [8 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png, id=140, 281.1303pt x 278.2395pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png  used on input line 332.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png  used on input line 333.
 (pdftex.def)             Requested size: 113.24197pt x 112.07925pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png, id=141, 281.1303pt x 279.6849pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png  used on input line 339.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png  used on input line 340.
 (pdftex.def)             Requested size: 113.24197pt x 112.66148pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png, id=142, 281.1303pt x 278.2395pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png  used on input line 347.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png  used on input line 348.
 (pdftex.def)             Requested size: 113.24197pt x 112.07925pt.
  [9 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png, id=151, 281.1303pt x 279.6849pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png  used on input line 354.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png  used on input line 355.
 (pdftex.def)             Requested size: 113.24197pt x 112.66148pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png, id=152, 281.1303pt x 278.2395pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png  used on input line 363.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png  used on input line 364.
 (pdftex.def)             Requested size: 113.24197pt x 112.07925pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png, id=153, 281.1303pt x 279.6849pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png  used on input line 370.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png  used on input line 371.
 (pdftex.def)             Requested size: 113.24197pt x 112.66148pt.
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png, id=154, 281.1303pt x 278.2395pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png  used on input line 378.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png  used on input line 379.
 (pdftex.def)             Requested size: 113.24197pt x 112.07925pt.
  [10 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2615.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2620.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2715.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png>]
 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png, id=167, 281.1303pt x 279.6849pt>
 File: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png Graphic file (type png)
 <use C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png>
-Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png  used on input line 385.
+Package pdftex.def Info: C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png  used on input line 386.
 (pdftex.def)             Requested size: 113.24197pt x 112.66148pt.
  [11 <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png> <C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 425.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 426.
  (C:\Users\Hana\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -727,7 +727,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (11.42233pt too wide) in paragraph at lines 424--426
+Overfull \hbox (11.42233pt too wide) in paragraph at lines 425--427
 []$\T1/lmtt/m/n/12 https : / / github . com / HanaSamsa / Problem-[]metricnih-[]dimenzij-[]odpornih-[]na-[]napake /
  []
 
