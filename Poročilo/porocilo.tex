@@ -139,7 +139,9 @@ Komentirana koda je dostopna na \href{https://github.com/HanaSamsa/Problem-metri
 V prvi fazi sva se iskanja ustreznih grafov z lastnostima dim($G$)$ =2$ in ftdim($G$) = 5, 6, 7, ... 
 lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za 
 katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti dim = 2 in ftdim = 4:
-V prvi fazi sva se iskanja ustreznih grafov z lastnostima $dim(G) =2$ in $ftdim(G) = 5, 6, 7, ...$ lotili tako, da sva za konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za katerega iščemo ustrezne grafe. Najprej sva kodo preizkusili za vrednosti $dim = 2$ in $ftdim = 4$:
+V prvi fazi sva se iskanja ustreznih grafov z lastnostima $dim(G) =2$ in $ftdim(G) = 5, 6, 7, ...$ lotili tako, da sva za 
+konstantno vrednost dim postopoma povečevali željeno ftdim in število vozlišč, za katerega iščemo ustrezne grafe. Najprej sva 
+kodo preizkusili za vrednosti $dim = 2$ in $ftdim = 4$:
 \begin{itemize}
     \item na $4$ vozliščih obstajata $2$ taka grafa, čas izvajanja kode je $0.04$ sekunde,
     \item na $5$ vozliščih obstaja $8$ takih grafov, čas izvajanja kode je $0.11$ sekunde,
@@ -279,7 +281,22 @@ Rezultate za $ftdim = 5$ ponazorimo še s tabelo:
 
 
 
-Očitno se torej že pri $ftdim = 5$ in $9$ vozliščih, kar se zdi dokaj malo, koda ne izvede v sprejemljivem času. Preverili sva še, kako časovno zahtevno je iskanje grafov z $dim = 2$ in $ftdim = 6$, za kar je potrebnih najmanj $12$ vozlišč; tudi ta koda se ni izvedla v normalnem času, zato sva za primere pri $ftdim = 5$ in več kot $8$ vozlišč ter $ftdim = 6, 7, ...$ grafe iskali s pomočjo metahevrističnih algoritmov. 
+Očitno se torej že pri $ftdim = 5$ in $9$ vozliščih, kar se zdi dokaj malo, koda ne izvede v sprejemljivem času. Preverili 
+sva še, kako časovno zahtevno je iskanje grafov z $dim = 2$ in $ftdim = 6$, za kar je potrebnih najmanj $12$ vozlišč; tudi 
+ta koda se ni izvedla v normalnem času, zato sva za primere pri $ftdim = 5$ in več kot $8$ vozlišč ter $ftdim = 6, 7, ...$ 
+grafe iskali s pomočjo metahevrističnih algoritmov. 
+
+
+\section{Metahevristično iskanje}
+
+V naslednji fazi sva želeli narediti kodo, ki bi poiskala tudi večje grafe. To sva dosegli s metahevrističnim pristopom. Tako
+kot v prvi fazi sva kodo najprej preizkusili za $dim = 2$ in $ftdim = 4.$ Pri tem sva za grafe vzeli že večje grafe s številom
+vozlišč od $9$ do $15,$ poskusili pa sva tudi za grafe z $20$ vozlišči.
+ 
+Pri metahevrističnem iskanju se je pojavila težava pri kodah metricna\_dolzina in na\_napake\_odporna\_metricna\_dolzina, zato 
+je ta koda drugačna kot je pri sistematičnem iskanju. 
+
+
 
 
 
