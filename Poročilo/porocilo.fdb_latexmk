@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1734115515 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734115524
+["pdflatex"] 1734116165 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734116174
   "C:/Users/Hana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1734098334 84442 9db79ff97c22615a9eed626c11c68fac ""
   "C:/Users/Hana/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667484004 10787538 094b8659390416be4cd1d4a6f5b9298a ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -144,6 +144,8 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
+  "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2515.png" 1734115893 49059 a03658a1a188ca51aeb9639aa881ef66 ""
+  "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2520.png" 1734115907 56166 16dbb1a5d0058ec59c486e03253b0c5b ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_1.png" 1734111405 22094 413c4bb99bc81df5e6ab66319e2ddddd ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/257_2.png" 1734111416 33432 666c8ccbdfb9a3ff6795f1da29e9b7d7 ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/258_1.png" 1734111482 27317 0cc48f8a5a3173a479c190f3d9f9ca06 ""
@@ -156,10 +158,10 @@
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_1.png" 1734111619 20877 b0ffa2fdc7c2bc8bae9e890b6c6ee387 ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_2.png" 1734111630 28123 b2ebeddd3ad08f1c2c667fa40ac80287 ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/259_3.png" 1734111641 19772 5fa2f8286c63980fa328a0f029329437 ""
-  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734115512 12216 e8832dff2d641f5b6c1a349c7ee7970d ""
-  "porocilo.aux" 1734115523 6182 4c5b78c3047461c267a3dacc3fc7cc61 "pdflatex"
-  "porocilo.out" 1734115523 912 694033e23b0948bc6cab0096b90b49c1 "pdflatex"
-  "porocilo.tex" 1734115512 12216 e8832dff2d641f5b6c1a349c7ee7970d ""
+  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734116155 12818 dbabfca53459601e96f5418bed457815 ""
+  "porocilo.aux" 1734116172 6878 3e1aa6f4fda866a3548d42d3bdff6cbc "pdflatex"
+  "porocilo.out" 1734116172 912 694033e23b0948bc6cab0096b90b49c1 "pdflatex"
+  "porocilo.tex" 1734116155 12818 dbabfca53459601e96f5418bed457815 ""
   (generated)
   "porocilo.aux"
   "porocilo.log"
