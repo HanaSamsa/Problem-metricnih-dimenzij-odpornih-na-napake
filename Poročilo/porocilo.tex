@@ -12,14 +12,14 @@
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage{sectsty}
-\usepackage{url, lipsum}
+\usepackage{url}
+\usepackage{lipsum}
 \usepackage{float}
 
 \usepackage{lmodern}
 \usepackage{amsmath,amsfonts}
 \usepackage{enumitem}
 \usepackage{footmisc}
-
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
@@ -389,12 +389,20 @@ Nekateri izmed poiskanih grafov so prikazani v nadaljevanju.
 
 \subsection{Hill climbing}
 
-Kot dodatek sva poizkusili večje grafe z določeno na 
+Kot dodatek sva poizkusili večje grafe z določeno na napake odporno metrično dimenzijo poiskati tudi z algoritmom
+Hill climbing. To je algoritem, ki postopoma izboljšuje graf tako, da iz trenutne rešitve ustvari novo, nekoliko 
+spremenjeno različico (sosednjo rešitev oziroma graf). Če je nova rešitev boljša, jo sprejme in nadaljuje postopek, 
+dokler ne doseže cilja ali največjega števila iteracij.
+
+Razlika med Hill climbing in simuliranim ohlajanjem je v odločanje kdaj zamenjati začetnega kandidata oziroma grafa 
+za rešitev s prilagojenim grafom. Če je prilagojen graf boljši kot začetni graf bomo vedno zamenjali začetnega s 
+prilagojenim grafom. Če pa je prilagojeni slabši od začetnega pa ju bomo morda še vedno zamenjali z neko določeno verjetnnostjo.
+
 
 
 \section{Ugotovitve}
 
-Najina pričakovanja so bila, da grafov z na napako odporne metrične dimenzije ni veliko prav tako pa, 
+Najina pričakovanja so bila, da grafov z na napako odporno metrične dimenzije ni veliko prav tako pa, 
 da jih je težko poiskati. Izkazalo se je, da to ni čisto res. Namreč se je število grafov, ko smo večale 
 število vozlišč hitro raslo. S sistematičnim iskanjem je to res nekoliko počasneje temveč je tudi zelo 
 učinkovito, saj preveri vse možne grafe in vrne točne rešitve. 
@@ -408,6 +416,12 @@ dolžino manjša. Izkazalo se je, da to drži, kar je razvidno iz samega časa d
 
 
 \section{Literatura in repozitorji}
+
+A. Simić, M. Bogdanović, Z. Maksimović, J. Milošević. Fault-tolerant metric dimension problem: A new integer linear programming 
+formulation and exact formula for grid graphs. Kragujevac Journal of Mathematics, 2018.
+
+Repozitorjji je dostopen na: \\
+ \url{https://github.com/HanaSamsa/Problem-metricnih-dimenzij-odpornih-na-napake/tree/main}
 
 
 \end{document}

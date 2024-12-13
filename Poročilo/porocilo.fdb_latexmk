@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1734119563 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734119572
+["pdflatex"] 1734121424 "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" "porocilo.pdf" "porocilo" 1734121436
   "C:/Users/Hana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1734098334 84442 9db79ff97c22615a9eed626c11c68fac ""
   "C:/Users/Hana/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667484004 10787538 094b8659390416be4cd1d4a6f5b9298a ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -23,6 +23,7 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr6.tfm" 1256929440 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr8.tfm" 1256929440 12064 9b9ade9f64cb32ce1d9a88d21fbd5c2d ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmri12.tfm" 1256929440 17144 271aaf9ebb339934b04110dc5211fba4 ""
+  "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmtt12.tfm" 1256929440 1368 6a60e6a5e029141041d64d339b87e533 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmex10.tfm" 1256929440 992 ce925c9346c7613270a79afbee98c070 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmmi10.tfm" 1256929440 1528 6d36b2385e0ca062a654de6ac59cb34f ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmmi12.tfm" 1256929440 1524 753b192b18f2991794f9d41a8228510b ""
@@ -51,6 +52,7 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb" 1256929440 122174 a2d5e73f396ddbeb3bdf5c79aea0993d ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb" 1256929440 109265 e6c7d377db6dfccd4a123fb26da8cffb ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb" 1256929440 27863 09ce3735688ffde955e72da27c95b61a ""
+  "C:/Users/Hana/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb" 1256929440 110323 19372944fba298bb4c4758abff959582 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1664892351 152127 31067273495f46936aa2b3653cd6090b ""
@@ -130,6 +132,7 @@
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/lm/omxlmex.fd" 1430470946 568 a5494d810f2680caf10205cd1226c76c ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/lm/ot1lmr.fd" 1430470946 1882 28c08db1407ebff35a658fd141753d16 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd" 1430470946 1867 996fe743d88a01aca041ed22cc10e1bb ""
+  "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd" 1430470946 2682 555da1faa2e266801e4b221d01a42cb5 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/lm/ts1lmr.fd" 1430470946 1914 884882d7ebb0fd65cea93fca77ff6f5a ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype-pdftex.def" 1711678399 48246 4fd40a0fb055e75ab59718b607ff1a02 ""
   "C:/Users/Hana/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.cfg" 1711678399 26842 362f00e9d49f97a0d1db424012abc18b ""
@@ -164,10 +167,10 @@
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2720.png" 1734115992 113646 ef7c91e5e95478d8d36a77c0cbdf35fb ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2815.png" 1734116009 63712 5bfae859970f3ff64939b202efd5b58e ""
   "C:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/2820.png" 1734116019 154521 de018c28e05a26ff9be604214c4e66f5 ""
-  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734119560 18409 0bb02e21ac49230b6c61d40aea524e6d ""
-  "porocilo.aux" 1734119571 9466 9c9a81f543a5e12744bbfa50173af765 "pdflatex"
-  "porocilo.out" 1734119571 1465 1aef760f127969d89610aad735799119 "pdflatex"
-  "porocilo.tex" 1734119560 18409 0bb02e21ac49230b6c61d40aea524e6d ""
+  "c:/Users/Hana/Desktop/Hana/faks/Finančni praktikum/Seminarska naloga/Problem-metricnih-dimenzij-odpornih-na-napake/Poročilo/porocilo.tex" 1734121421 19514 6a692461322958edf5c8110d4adacbb9 ""
+  "porocilo.aux" 1734121434 9466 9c9a81f543a5e12744bbfa50173af765 "pdflatex"
+  "porocilo.out" 1734121434 1465 1aef760f127969d89610aad735799119 "pdflatex"
+  "porocilo.tex" 1734121421 19514 6a692461322958edf5c8110d4adacbb9 ""
   (generated)
   "porocilo.aux"
   "porocilo.log"
